@@ -97,49 +97,49 @@ export function ContactSection() {
   ]
 
   return (
-    <section id="contact" className="py-32 relative bg-gradient-to-b from-gray-50 to-white scroll-mt-20">
+    <section id="contact" className="py-12 md:py-24 lg:py-32 relative bg-gradient-to-b from-gray-50 to-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <div className="inline-block mb-6">
-            <span className="px-5 py-2 rounded-full bg-indigo-100 border border-indigo-200 text-indigo-600 font-medium text-sm tracking-wide">
+        <div className="text-center mb-12 md:mb-20">
+          <div className="inline-block mb-4 md:mb-6">
+            <span className="px-4 py-1.5 md:px-5 md:py-2 rounded-full bg-indigo-100 border border-indigo-200 text-indigo-600 font-medium text-xs md:text-sm tracking-wide">
               기업 파트너십
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-balance mb-6 text-gray-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-balance mb-4 md:mb-6 text-gray-900 px-4">
             비즈니스 성장을 위한
             <br />
             전략적 파트너십
           </h2>
-          <p className="text-xl text-gray-600 text-balance max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base lg:text-xl text-gray-600 text-balance max-w-3xl mx-auto leading-relaxed px-4">
             인포플래닛은 귀사의 마케팅 전략을 혁신하고 비즈니스 목표를 달성하는 데 필요한 모든 리소스를 제공합니다.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           <div>
-            <h3 className="text-3xl font-bold mb-8 text-gray-900">엔터프라이즈 서비스</h3>
-            <p className="text-gray-600 mb-10 leading-relaxed text-lg">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-gray-900">엔터프라이즈 서비스</h3>
+            <p className="text-sm md:text-base lg:text-lg text-gray-600 mb-8 md:mb-10 leading-relaxed">
               인포플래닛의 엔터프라이즈 서비스는 대기업의 복잡한 요구사항을 충족하도록 설계되었습니다. 맞춤형 솔루션과 전담 지원으로 귀사의 비즈니스 성과를 극대화합니다.
             </p>
 
-            <div className="space-y-6 mb-12">
+            <div className="space-y-4 md:space-y-6 mb-8 md:mb-12">
               {enterpriseFeatures.map((feature, index) => (
                 <Card
                   key={index}
                   className="group bg-white border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-300"
                 >
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className={`w-14 h-14 ${
+                  <CardContent className="p-4 md:p-6">
+                    <div className="flex items-start space-x-3 md:space-x-4">
+                      <div className={`w-12 h-12 md:w-14 md:h-14 ${
                         index === 0 ? 'bg-gradient-to-br from-indigo-500 to-purple-500' : 
                         index === 1 ? 'bg-gradient-to-br from-purple-500 to-pink-500' : 
                         'bg-gradient-to-br from-cyan-500 to-blue-500'
-                      } rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                        <feature.icon className="h-7 w-7 text-white" />
+                      } rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                        <feature.icon className="h-6 w-6 md:h-7 md:w-7 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold mb-2 text-gray-900 text-lg">{feature.title}</h4>
-                        <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
+                        <h4 className="font-semibold mb-1 md:mb-2 text-gray-900 text-base md:text-lg">{feature.title}</h4>
+                        <p className="text-xs md:text-sm text-gray-600 leading-relaxed">{feature.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -147,24 +147,24 @@ export function ContactSection() {
               ))}
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               {contactInfo.map((info, index) => (
                 <Card
                   key={index}
                   className="group bg-white border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-300"
                 >
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className={`w-14 h-14 ${
+                  <CardContent className="p-4 md:p-6">
+                    <div className="flex items-start space-x-3 md:space-x-4">
+                      <div className={`w-12 h-12 md:w-14 md:h-14 ${
                         index === 0 ? 'bg-gradient-to-br from-indigo-500 to-purple-500' : 
                         'bg-gradient-to-br from-cyan-500 to-blue-500'
-                      } rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                        <info.icon className="h-7 w-7 text-white" />
+                      } rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                        <info.icon className="h-6 w-6 md:h-7 md:w-7 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold mb-2 text-gray-900 text-lg">{info.title}</h4>
-                        <p className="text-gray-900 font-medium mb-1">{info.content}</p>
-                        <p className="text-sm text-gray-600">{info.description}</p>
+                        <h4 className="font-semibold mb-1 md:mb-2 text-gray-900 text-base md:text-lg">{info.title}</h4>
+                        <p className="text-sm md:text-base text-gray-900 font-medium mb-1">{info.content}</p>
+                        <p className="text-xs md:text-sm text-gray-600">{info.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -173,12 +173,12 @@ export function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl border border-gray-200 p-10 shadow-xl">
-            <h3 className="text-3xl font-bold mb-8 text-gray-900">기업 문의</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="bg-white rounded-2xl md:rounded-3xl border border-gray-200 p-6 md:p-10 shadow-xl">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-gray-900">기업 문의</h3>
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-700">
+                  <label htmlFor="name" className="block text-xs md:text-sm font-medium mb-1.5 md:mb-2 text-gray-700">
                     이름 *
                   </label>
                   <Input
@@ -187,11 +187,11 @@ export function ContactSection() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-12 rounded-xl"
+                    className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-10 md:h-12 rounded-lg md:rounded-xl text-sm md:text-base"
                   />
                 </div>
                 <div>
-                  <label htmlFor="position" className="block text-sm font-medium mb-2 text-gray-700">
+                  <label htmlFor="position" className="block text-xs md:text-sm font-medium mb-1.5 md:mb-2 text-gray-700">
                     직책 *
                   </label>
                   <Input
@@ -200,14 +200,14 @@ export function ContactSection() {
                     value={formData.position}
                     onChange={handleInputChange}
                     required
-                    className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-12 rounded-xl"
+                    className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-10 md:h-12 rounded-lg md:rounded-xl text-sm md:text-base"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-700">
+                  <label htmlFor="email" className="block text-xs md:text-sm font-medium mb-1.5 md:mb-2 text-gray-700">
                     이메일 *
                   </label>
                   <Input
@@ -217,11 +217,11 @@ export function ContactSection() {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-12 rounded-xl"
+                    className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-10 md:h-12 rounded-lg md:rounded-xl text-sm md:text-base"
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2 text-gray-700">
+                  <label htmlFor="phone" className="block text-xs md:text-sm font-medium mb-1.5 md:mb-2 text-gray-700">
                     연락처
                   </label>
                   <Input
@@ -230,13 +230,13 @@ export function ContactSection() {
                     type="tel"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-12 rounded-xl"
+                    className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-10 md:h-12 rounded-lg md:rounded-xl text-sm md:text-base"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium mb-2 text-gray-700">
+                <label htmlFor="company" className="block text-xs md:text-sm font-medium mb-1.5 md:mb-2 text-gray-700">
                   회사명 *
                 </label>
                 <Input
@@ -245,12 +245,12 @@ export function ContactSection() {
                   value={formData.company}
                   onChange={handleInputChange}
                   required
-                  className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-12 rounded-xl"
+                  className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 transition-all h-10 md:h-12 rounded-lg md:rounded-xl text-sm md:text-base"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-700">
+                <label htmlFor="message" className="block text-xs md:text-sm font-medium mb-1.5 md:mb-2 text-gray-700">
                   문의 내용 *
                 </label>
                 <Textarea
@@ -260,7 +260,7 @@ export function ContactSection() {
                   onChange={handleInputChange}
                   required
                   rows={5}
-                  className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 resize-none transition-all rounded-xl"
+                  className="bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-indigo-300 resize-none transition-all rounded-lg md:rounded-xl text-sm md:text-base"
                   placeholder="귀사의 비즈니스 요구사항과 목표에 대해 알려주세요..."
                 />
               </div>
@@ -269,21 +269,21 @@ export function ContactSection() {
                 type="submit"
                 size="lg"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-0 h-14 text-base font-semibold shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:scale-[1.02] rounded-xl"
+                className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-0 h-12 md:h-14 text-sm md:text-base font-semibold shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:scale-[1.02] rounded-lg md:rounded-xl"
               >
                 {isSubmitting ? (
                   "전송 중..."
                 ) : (
                   <>
                     문의하기
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                   </>
                 )}
               </Button>
             </form>
 
-            <div className="mt-6 p-5 bg-gray-50 rounded-xl border border-gray-200">
-              <p className="text-sm text-gray-500 text-center">
+            <div className="mt-4 md:mt-6 p-4 md:p-5 bg-gray-50 rounded-lg md:rounded-xl border border-gray-200">
+              <p className="text-xs md:text-sm text-gray-500 text-center">
                 제출된 정보는 인포플래닛의 개인정보 처리방침에 따라 안전하게 보호됩니다
               </p>
             </div>

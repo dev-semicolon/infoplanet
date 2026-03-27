@@ -51,21 +51,21 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 border-t border-gray-800">
       <div className="border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">인포플래닛의 최신 소식을 받아보세요</h3>
-              <p className="text-gray-400 leading-relaxed text-lg">
+              <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 md:mb-4 text-white">인포플래닛의 최신 소식을 받아보세요</h3>
+              <p className="text-sm md:text-base lg:text-lg text-gray-400 leading-relaxed">
                 리워드 마케팅, 업계 트렌드 및 플랫폼 업데이트에 대한 최신 인사이트를 받아보세요.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Input
                 type="email"
                 placeholder="이메일 주소 입력"
-                className="flex-1 bg-gray-800 border-gray-700 text-white placeholder:text-gray-500 focus:border-indigo-500 h-14 rounded-xl"
+                className="flex-1 bg-gray-800 border-gray-700 text-white placeholder:text-gray-500 focus:border-indigo-500 h-12 md:h-14 rounded-lg md:rounded-xl text-sm md:text-base"
               />
-              <Button className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-0 h-14 px-8 font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:scale-105 rounded-xl">
+              <Button className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-0 h-12 md:h-14 px-6 md:px-8 font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:scale-105 rounded-lg md:rounded-xl text-sm md:text-base">
                 구독하기
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -74,29 +74,29 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 md:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <Image
                 src="/logos/long_white_nb.png"
                 alt="InfoPlanet"
                 width={180}
                 height={40}
-                className="h-10 w-auto"
+                className="h-8 md:h-10 w-auto"
               />
             </div>
-            <p className="text-gray-400 mb-8 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-400 mb-6 md:mb-8 leading-relaxed">
               브랜드와 참여도 높은 사용자를 의미 있는 상호작용과 가치 있는 리워드를 통해 연결하는 선도적인 리워드 마케팅 플랫폼입니다.
             </p>
-            <div className="flex space-x-3">
+            <div className="flex space-x-2 md:space-x-3">
               {socialLinks.map((social) => (
                 <div
                   key={social.name}
-                  className="w-11 h-11 bg-gray-800 border border-gray-700 rounded-xl flex items-center justify-center hover:border-indigo-500 hover:scale-110 transition-all duration-300 cursor-pointer group"
+                  className="w-9 h-9 md:w-11 md:h-11 bg-gray-800 border border-gray-700 rounded-lg md:rounded-xl flex items-center justify-center hover:border-indigo-500 hover:scale-110 transition-all duration-300 cursor-pointer group"
                 >
-                  <social.icon className="h-5 w-5 text-gray-400 group-hover:text-indigo-400 transition-colors" />
+                  <social.icon className="h-4 w-4 md:h-5 md:w-5 text-gray-400 group-hover:text-indigo-400 transition-colors" />
                 </div>
               ))}
             </div>
@@ -104,8 +104,8 @@ export function Footer() {
 
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="font-semibold mb-5 text-white text-base">{category}</h4>
-              <ul className="space-y-3">
+              <h4 className="font-semibold mb-3 md:mb-5 text-white text-sm md:text-base">{category}</h4>
+              <ul className="space-y-2 md:space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
                     <span className="text-gray-400 hover:text-indigo-400 transition-colors text-sm relative group cursor-pointer inline-block">
@@ -121,18 +121,18 @@ export function Footer() {
       </div>
 
       <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="mb-6 text-sm text-gray-500 leading-relaxed">
-            <div className="flex flex-col space-y-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
+          <div className="mb-4 md:mb-6 text-xs md:text-sm text-gray-500 leading-relaxed">
+            <div className="flex flex-col space-y-1 md:space-y-2">
               <span>상호명 | 주식회사 인포플래닛 &emsp; 대표자 | 정덕근 <br/> 사업자등록번호 | 235-81-03562&emsp;사업장소재지 | 경기도 광주시 <br className="block md:hidden"/>태전중앙 1길 5, 1동 613호(태전동)</span>
               <span>연락처 | 010-2747-7314 &emsp; 이메일 | contact@info-planet.co.kr</span>
             </div>
           </div>
           
-          <Separator className="bg-gray-800 mb-6" />
+          <Separator className="bg-gray-800 mb-4 md:mb-6" />
           
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-gray-500">© 주식회사 인포플래닛 | 모든 권리 보유</div>
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+            <div className="text-xs md:text-sm text-gray-500">© 주식회사 인포플래닛 | 모든 권리 보유</div>
           </div>
         </div>
       </div>

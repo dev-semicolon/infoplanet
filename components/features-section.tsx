@@ -89,12 +89,12 @@ function StatCounter({ number, label, desc }: { number: string, label: string, d
   }
   
   return (
-    <div ref={ref} className="text-center bg-white rounded-3xl p-10 border border-gray-200 hover:border-indigo-300 hover:shadow-xl transition-all group">
-      <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-3 group-hover:scale-110 transition-transform">
+    <div ref={ref} className="text-center bg-white rounded-2xl md:rounded-3xl p-6 md:p-10 border border-gray-200 hover:border-indigo-300 hover:shadow-xl transition-all group">
+      <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 md:mb-3 group-hover:scale-110 transition-transform">
         {isVisible ? formatNumber() : number.replace(/[\d.,]/g, '0')}
       </div>
-      <div className="text-lg font-semibold text-gray-800 mb-1">{label}</div>
-      <div className="text-sm text-gray-500">{desc}</div>
+      <div className="text-base md:text-lg font-semibold text-gray-800 mb-1">{label}</div>
+      <div className="text-xs md:text-sm text-gray-500">{desc}</div>
     </div>
   )
 }
@@ -174,29 +174,29 @@ export function FeaturesSection() {
   }, [isWhyInfoplanetVisible])
 
   return (
-    <section id="services" className="py-24 relative scroll-mt-20">
+    <section id="services" className="py-12 md:py-24 relative scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* 숫자 카운터 섹션 */}
-        <div id="about" className="mb-24 scroll-mt-20">
-          <div className="bg-white rounded-3xl p-12 border border-gray-200 shadow-xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        <div id="about" className="mb-12 md:mb-24 scroll-mt-20">
+          <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-12 border border-gray-200 shadow-xl text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
               리워드 광고, 새로운 기준을 만드는 <span className="text-indigo-600">인포플래닛</span>
             </h2>
-            <p className="text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              브랜드와 유저를 연결하는 더 나은 방식을 만듭니다.<br />
+            <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
+              브랜드와 유저를 연결하는 더 나은 방식을 만듭니다.<br className="hidden sm:block" />
               1세대 리워드 광고를 넘어, 기술과 데이터로 만드는 2세대 솔루션입니다.
             </p>
             
-            <div className="flex items-center justify-center gap-4 mb-4">
-              <span className="text-gray-500">2,000+ 브랜드가 선택한</span>
+            <div className="flex items-center justify-center gap-2 md:gap-4 mb-3 md:mb-4">
+              <span className="text-sm md:text-base text-gray-500">2,000+ 브랜드가 선택한</span>
             </div>
-            <div className="text-7xl md:text-8xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <div className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
               검증된 파트너
             </div>
             
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <p className="text-gray-900 text-lg">
-                캠페인 설계부터 미션 운영, 성과 분석까지<br />
+            <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-gray-200">
+              <p className="text-gray-900 text-sm md:text-base lg:text-lg">
+                캠페인 설계부터 미션 운영, 성과 분석까지<br className="hidden sm:block" />
                 원스톱으로 제공합니다.
               </p>
             </div>
@@ -209,25 +209,25 @@ export function FeaturesSection() {
         </div>
 
         {/* 제휴 파트너사 - 컴팩트한 원형 스타일 */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">
             함께 성장하는 <span className="text-indigo-600">파트너</span>
           </h2>
-          <p className="text-gray-600 mb-10 text-base max-w-3xl mx-auto">
-            카카오뱅크, 배달의민족, 토스 등 대형 플랫폼과<br />
+          <p className="text-sm md:text-base text-gray-600 mb-8 md:mb-10 max-w-3xl mx-auto px-4">
+            카카오뱅크, 배달의민족, 토스 등 대형 플랫폼과<br className="hidden sm:block" />
             2,000개 이상의 브랜드가 인포플래닛과 함께 성장하고 있습니다.
           </p>
 
           {/* 겹쳐진 원형 로고들 */}
           <div 
             ref={partnersRef}
-            className={`flex items-center justify-center mb-20 transition-all duration-1000 ${
+            className={`flex items-center justify-center mb-12 md:mb-20 overflow-x-auto px-4 transition-all duration-1000 ${
               isPartnersVisible 
                 ? 'opacity-100 translate-y-0' 
                 : 'opacity-0 translate-y-10'
             }`}
           >
-            <div className="relative flex items-center" style={{ height: '80px' }}>
+            <div className="relative flex items-center min-w-max" style={{ height: '60px', minHeight: '60px' }}>
               {[
                 "/partners/네이버.png",
                 "/partners/구글.png",
@@ -246,13 +246,13 @@ export function FeaturesSection() {
               ].map((imagePath, index) => (
                 <div
                   key={index}
-                  className={`group relative w-16 h-16 bg-white rounded-full border-2 border-gray-200 hover:border-indigo-400 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-500 hover:scale-125 hover:z-50 p-2 ${
+                  className={`group relative w-12 h-12 md:w-16 md:h-16 bg-white rounded-full border-2 border-gray-200 hover:border-indigo-400 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-500 hover:scale-125 hover:z-50 p-1.5 md:p-2 ${
                     isPartnersVisible 
                       ? 'opacity-100 translate-x-0' 
                       : 'opacity-0 -translate-x-8'
                   }`}
                   style={{ 
-                    marginLeft: index === 0 ? '0' : '-12px',
+                    marginLeft: index === 0 ? '0' : '-8px',
                     zIndex: 15 - index,
                     transitionDelay: isPartnersVisible ? `${index * 50}ms` : '0ms'
                   }}
@@ -268,13 +268,13 @@ export function FeaturesSection() {
               ))}
               {/* "+More" 인디케이터 */}
               <div 
-                className={`w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg text-white font-bold text-xs transition-all duration-500 ${
+                className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg text-white font-bold text-xs transition-all duration-500 ${
                   isPartnersVisible 
                     ? 'opacity-100 scale-100' 
                     : 'opacity-0 scale-50'
                 }`}
                 style={{ 
-                  marginLeft: '-12px', 
+                  marginLeft: '-8px', 
                   zIndex: 0,
                   transitionDelay: isPartnersVisible ? '700ms' : '0ms'
                 }}
@@ -286,12 +286,12 @@ export function FeaturesSection() {
         </div>
 
         {/* 믿고 맡기는 다양한 마케팅 - 아이앤뷰 스타일 */}
-        <div className="mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
+        <div className="mb-12 md:mb-20">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-8 md:mb-16 text-gray-900 px-4">
             믿고 맡기는 <span className="text-indigo-600">다양한 마케팅</span>
           </h2>
 
-          <div ref={servicesRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div ref={servicesRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {[
               {
                 title: "리워드 서베이",
@@ -341,14 +341,14 @@ export function FeaturesSection() {
                   transitionDelay: isServicesVisible ? `${index * 150}ms` : '0ms'
                 }}
               >
-                <CardContent className="p-8 relative">
+                <CardContent className="p-6 md:p-8 relative">
                   <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />
                   <div className="relative z-10">
                     <div className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-2">
                       {service.subtitle}
                     </div>
-                    <h3 className="text-2xl font-bold mb-4 text-gray-900">{service.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-900">{service.title}</h3>
+                    <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                       {service.description}
                     </p>
                   </div>
@@ -359,19 +359,19 @@ export function FeaturesSection() {
         </div>
 
         {/* Pain Points Section - 아이앤뷰 스타일 */}
-        <div className="mb-20 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-16 border border-indigo-100">
-          <div className="text-center mb-12">
-            <h3 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
-              온라인 마케팅이 <span className="text-indigo-600">어려우셨던 분들,</span><br />
+        <div className="mb-12 md:mb-20 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl md:rounded-3xl p-6 md:p-12 lg:p-16 border border-indigo-100">
+          <div className="text-center mb-8 md:mb-12">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-6 text-gray-900 leading-tight px-4">
+              온라인 마케팅이 <span className="text-indigo-600">어려우셨던 분들,</span><br className="hidden sm:block" />
               인포플래닛과 함께 <span className="text-indigo-600">해결해보세요.</span>
             </h3>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              수많은 마케팅 고민에 머리 아프실 필요 없습니다.<br />
+            <p className="text-sm md:text-base lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+              수많은 마케팅 고민에 머리 아프실 필요 없습니다.<br className="hidden sm:block" />
               무작정 다 들어가는 마케팅이 아닌, <span className="text-gray-900 font-semibold">필요한 솔루션만을 제안</span>합니다!
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
             {[
               { 
                 text: "리워드 마케팅을 시작하고 싶은데 어디서부터 해야 할지 모르겠어요",
@@ -443,42 +443,44 @@ export function FeaturesSection() {
             ].map((pain, index) => (
               <div
                 key={index}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-300 group"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 border border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-300 group"
               >
                 {/* 심플한 아이콘 */}
-                <div className="mb-6 flex justify-center opacity-80 group-hover:opacity-100 transition-opacity">
-                  {pain.icon}
+                <div className="mb-4 md:mb-6 flex justify-center opacity-80 group-hover:opacity-100 transition-opacity">
+                  <div className="scale-75 md:scale-100">
+                    {pain.icon}
+                  </div>
                 </div>
                 
-                <p className="text-gray-700 leading-relaxed group-hover:text-gray-900 transition-colors text-center">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed group-hover:text-gray-900 transition-colors text-center">
                   {pain.text}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="text-center pt-8 border-t border-indigo-200">
-            <h4 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+          <div className="text-center pt-6 md:pt-8 border-t border-indigo-200">
+            <h4 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4 text-gray-900 px-4">
               <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 온라인 마케팅 솔루션 NO.1
               </span>
             </h4>
-            <p className="text-gray-600 mb-8 text-lg">
-              업종에 따른 특성을 파악하여 함께해주시는 광고주분들이<br />
+            <p className="text-sm md:text-base lg:text-lg text-gray-600 mb-6 md:mb-8 px-4">
+              업종에 따른 특성을 파악하여 함께해주시는 광고주분들이<br className="hidden sm:block" />
               <span className="text-gray-900 font-semibold">최고의 효과를 보실 수 있게</span> 인포플래닛이 함께합니다 :)
             </p>
             <Button
               size="lg"
-              className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-0 px-12 py-6 text-base font-semibold shadow-2xl shadow-indigo-500/30 transition-all duration-300 hover:scale-105"
+              className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-0 px-8 py-5 md:px-12 md:py-6 text-sm md:text-base font-semibold shadow-2xl shadow-indigo-500/30 transition-all duration-300 hover:scale-105"
             >
               무료 상담 신청하기
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
             </Button>
           </div>
         </div>
 
         {/* 실적 통계 - 카운터 애니메이션 */}
-        <div id="solutions" className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 scroll-mt-20">
+        <div id="solutions" className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-12 md:mb-20 scroll-mt-20">
           <StatCounter number="80-90%" label="수익 공유율" desc="업계 최고 수준" />
           <StatCounter number="2,000+" label="파트너사" desc="함께 성장하는 기업" />
           <StatCounter number="99.9%" label="시스템 가용성" desc="안정적인 서비스" />
@@ -487,19 +489,19 @@ export function FeaturesSection() {
         {/* 왜 인포플래닛인가 */}
         <div 
           ref={whyInfoplanetRef}
-          className={`bg-white rounded-3xl p-16 mb-20 border border-gray-200 shadow-lg transition-all duration-1000 ${
+          className={`bg-white rounded-2xl md:rounded-3xl p-6 md:p-12 lg:p-16 mb-12 md:mb-20 border border-gray-200 shadow-lg transition-all duration-1000 ${
             isWhyInfoplanetVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-12'
           }`}
         >
-          <div className="text-center mb-12">
-            <h3 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <div className="text-center mb-8 md:mb-12">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-6 text-gray-900 px-4">
               왜 <span className="text-indigo-600">인포플래닛</span>을 선택해야 할까요?
             </h3>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {[
               {
                 title: "투명한 수익 공유",
@@ -519,7 +521,7 @@ export function FeaturesSection() {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className={`bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 border border-gray-200 text-center hover:shadow-lg transition-all duration-700 group ${
+                className={`bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl p-6 md:p-8 border border-gray-200 text-center hover:shadow-lg transition-all duration-700 group ${
                   isWhyInfoplanetVisible 
                     ? 'opacity-100 translate-y-0' 
                     : 'opacity-0 translate-y-12'
@@ -528,39 +530,39 @@ export function FeaturesSection() {
                   transitionDelay: isWhyInfoplanetVisible ? `${(index + 1) * 150}ms` : '0ms'
                 }}
               >
-                <div className="text-5xl mb-4">{item.icon}</div>
-                <h4 className="text-xl font-bold mb-3 text-gray-900">{item.title}</h4>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <div className="text-4xl md:text-5xl mb-3 md:mb-4">{item.icon}</div>
+                <h4 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-gray-900">{item.title}</h4>
+                <p className="text-sm md:text-base text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Final CTA Section - 아이앤뷰 스타일 */}
-        <div className="text-center bg-gradient-to-br from-indigo-600 to-purple-600 rounded-3xl p-16 md:p-20 border border-indigo-500 shadow-2xl">
-          <h3 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
+        <div className="text-center bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl md:rounded-3xl p-8 md:p-16 lg:p-20 border border-indigo-500 shadow-2xl">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 text-white leading-tight px-4">
             인포플래닛과 함께<br />
             <span className="text-indigo-100">
               멈추지 않는 성장
             </span>을 경험하세요.
           </h3>
-          <p className="text-indigo-100 mb-12 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base lg:text-lg text-indigo-100 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
             혁신적인 리워드 마케팅으로 귀사의 비즈니스를 한 단계 업그레이드하세요
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
             <Button
               size="lg"
-              className="bg-white text-indigo-600 hover:bg-gray-50 border-0 px-12 py-7 text-lg font-semibold shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-white text-indigo-600 hover:bg-gray-50 border-0 px-8 py-5 md:px-12 md:py-7 text-base md:text-lg font-semibold shadow-2xl hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               회사소개서 다운로드
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="bg-transparent text-white border-white/30 hover:bg-white/10 px-12 py-7 text-lg font-semibold transition-all duration-300 hover:scale-105"
+              className="bg-transparent text-white border-white/30 hover:bg-white/10 px-8 py-5 md:px-12 md:py-7 text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105"
             >
               문의하기
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
             </Button>
           </div>
         </div>
