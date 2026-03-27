@@ -55,7 +55,7 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "이메일",
-      content: "enterprise@infoplanet.co.kr",
+      content: "contact@info-planet.co.kr",
       description: "기업 문의 전용",
       gradient: "bg-gradient-blue-purple",
     },
