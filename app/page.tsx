@@ -6,6 +6,15 @@ import { IntegrationSection } from "@/components/integration-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "인포플래닛 - 리워드 광고 마케팅 플랫폼",
+  description: "브랜드와 소비자를 연결하는 미션 기반 리워드 광고 솔루션. 성과를 만드는 광고, 수익을 만드는 플랫폼. 리워드 서베이, 인앱 리워드, SNS 마케팅, 바이럴 마케팅 솔루션 제공.",
+  alternates: {
+    canonical: '/',
+  },
+}
 
 export default function HomePage() {
   return (
