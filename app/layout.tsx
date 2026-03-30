@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   verification: {
     other: {
       // 네이버 서치어드바이저 메타태그는 여기에 추가
-      // 'naver-site-verification': 'YOUR_NAVER_VERIFICATION_CODE',
+      // 'naver-site-verification': '11c902b363841c9b1d73f2fd1f2d59f282e9b3d9',
     },
   },
 }
