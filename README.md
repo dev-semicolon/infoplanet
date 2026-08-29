@@ -13,6 +13,8 @@ INFOPLANET is a Korean reward-advertising infrastructure company connecting adve
 
 Selling Planet publishes the price, minimum quantity, fulfillment path, and limitations of each campaign before ordering. It also provides free Naver Place and Shopping rank checks, search-demand comparisons, ROAS calculations, ad-metric calculators, and UTM link tools.
 
+- [Free ad profit and 7-day test workbook](https://www.selling-planet.com/resources/ad-profit-template?utm_source=github&utm_medium=owned_referral&utm_campaign=free_resource_launch&utm_content=infoplanet_repository) - Calculate break-even CPA, target CPC and ROAS, then record a small advertising test in an editable XLSX file. No account is required.
+
 Reward and engagement campaigns support initial discovery and measurable actions. They do not guarantee search rankings, organic growth, purchases, or revenue.
 
 ## Contact
