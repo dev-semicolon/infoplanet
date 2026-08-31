@@ -15,6 +15,12 @@ Selling Planet publishes the price, minimum quantity, fulfillment path, and limi
 
 - [Free ad profit and 7-day test workbook](https://www.selling-planet.com/resources/ad-profit-template?utm_source=github&utm_medium=owned_referral&utm_campaign=free_resource_launch&utm_content=infoplanet_repository) - Calculate break-even CPA, target CPC and ROAS, then record a small advertising test in an editable XLSX file. No account is required.
 
+### Free operating guides
+
+- [쿠팡 상단 노출·상위노출 점검 방법](https://www.selling-planet.com/guides/coupang-top-exposure-guide?utm_source=github&utm_medium=owned_referral&utm_campaign=search_exposure_guides&utm_content=coupang_guide) - Check product information, search terms, pricing, delivery, Item Winner conditions, and official ads separately.
+- [네이버 플레이스 상단 노출·상위노출 점검 방법](https://www.selling-planet.com/guides/naver-place-top-exposure-guide?utm_source=github&utm_medium=owned_referral&utm_campaign=search_exposure_guides&utm_content=naver_place_guide) - Separate organic Place ranking, official ads, Place Plus, and engagement campaigns before spending.
+- [네이버 쇼핑 상단 노출·상위노출 점검 방법](https://www.selling-planet.com/guides/naver-shopping-top-exposure-guide?utm_source=github&utm_medium=owned_referral&utm_campaign=search_exposure_guides&utm_content=naver_shopping_guide) - Review product data, store trust, delivery, reviews, and Shopping Search Ads in order.
+
 Reward and engagement campaigns support initial discovery and measurable actions. They do not guarantee search rankings, organic growth, purchases, or revenue.
 
 ## Contact
