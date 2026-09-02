@@ -15,6 +15,7 @@ Selling Planet publishes the price, minimum quantity, fulfillment path, and limi
 
 - [Free ad profit and 7-day test workbook](https://www.selling-planet.com/resources/ad-profit-template?utm_source=github&utm_medium=owned_referral&utm_campaign=free_resource_launch&utm_content=infoplanet_repository) - Calculate break-even CPA, target CPC and ROAS, then record a small advertising test in an editable XLSX file. No account is required.
 - [쿠팡 마진 계산기](https://www.selling-planet.com/tools/coupang-margin-calculator?utm_source=github&utm_medium=owned_referral&utm_campaign=free_seller_tools&utm_content=coupang_margin_calculator) - Enter the current product fee rate, product cost, logistics cost, advertising cost, and return reserve to estimate per-order profit and break-even ROAS. Results do not guarantee the actual settlement or revenue.
+- [마켓플레이스 상품 리스팅 무료 점검기](https://www.selling-planet.com/tools/marketplace-listing-optimizer?utm_source=github&utm_medium=owned_referral&utm_campaign=free_seller_tools&utm_content=marketplace_listing_optimizer) - Check category, attributes, product title, options, images, price and delivery, detail-page information, and measurement baselines for Naver Shopping, Coupang, and other marketplaces. No login is required, inputs are not stored on the server, and the checklist does not guarantee rankings or sales.
 
 ### Free operating guides
 
